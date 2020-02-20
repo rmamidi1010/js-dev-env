@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
-    "prestart":"node src/startMessage.js",
-    "start":"npm-run-all --parallel security-check start:server",
-    "start:server": "node buildScripts/srcServer.js",
-    "security-check":"npm audit"
+    "prestart":"babel-node src/startMessage.js",
+    "start":"npm-run-all --parallel  start:server",
+    "start:server": "babel-node buildScripts/srcServer.js"
   },
   "author": "Cory House",
   "license": "MIT",
